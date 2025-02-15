@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // 🔹 Fetch & Render Feeds with Optimized Performance
-    async function fetchAllFeeds(category = "all") {
+    async function fetchAllFeeds(category = "tech") {
         articlesContainer.innerHTML = "<p>Loading RJX7's feeds... 🔄</p>";
 
         let allArticles = [];

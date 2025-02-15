@@ -133,10 +133,8 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderArticles(articles) {
         articlesContainer.innerHTML = articles.map(article => `
             <a href="${article.link}" target="_blank" class="article-card">
-        //       <img src="${article.image}" alt="Article Image" onError="this.style.display='none';">
                 <div class="article-content">
                     <h3>${article.title}</h3>
-                   // <p>${article.description.slice(0, 180)}...</p>
                     <div class="article-meta">
                         <span>${new Date(article.pubDate).toLocaleDateString()}</span>
                         <span class="article-category">${article.category}</span>

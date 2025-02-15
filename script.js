@@ -11,51 +11,29 @@ document.addEventListener("DOMContentLoaded", () => {
     const feeds = {
         tech: [
             { url: "https://news.ycombinator.com/rss", name: "Hacker News" }, // The best for startup & tech insights
-            { url: "https://feeds.arstechnica.com/arstechnica/index", name: "Ars Technica" }, // Deep tech analysis
             { url: "https://stratechery.com/feed/", name: "Stratechery" }, // Ben Thompson's insights on tech & business
-            { url: "https://www.platformer.news/rss", name: "Platformer" }, // Casey Newton on tech and society
-            { url: "https://avc.com/feed/", name: "AVC - Fred Wilson" }, // VC insights from an industry veteran
-            { url: "https://a16z.com/feed/", name: "Andreessen Horowitz (a16z)" }, // The best on startups, crypto, and AI
-            { url: "https://spectrum.ieee.org/feed", name: "IEEE Spectrum" }, // Engineering and AI research
-            { url: "https://www.technologyreview.com/feed/", name: "MIT Technology Review" }, // The future of AI and tech
-            { url: "https://arxiv.org/rss/cs.AI", name: "ArXiv AI Papers" }, // The latest AI research papers
             { url: "https://rootsofprogress.org/feed.xml", name: "The Roots of Progress" } // Progress & human innovation
         ],
         philosophy: [
             { url: "https://dailystoic.com/feed/", name: "The Daily Stoic" }, // Timeless wisdom
             { url: "https://aeon.co/feed.rss", name: "Aeon" }, // Deep philosophical essays
             { url: "https://www.lesswrong.com/feed.xml", name: "LessWrong" }, // Rationality & AI alignment
-            { url: "https://www.themarginalian.org/feed/", name: "The Marginalian (Maria Popova)" }, // Thought-provoking essays
-            { url: "https://www.samkinsley.com/feed/", name: "Sam Kinsley (Future of Tech & Society)" }, // Philosophy of AI
-            { url: "https://nickbostrom.com/rss.xml", name: "Nick Bostrom (Superintelligence & AI Risk)" } // AI existential risk
         ],
         investing: [
-            { url: "https://www.collaborativefund.com/blog/rss/", name: "Collaborative Fund Blog" }, // Deep finance and investing insights
             { url: "https://www.epsilontheory.com/feed/", name: "Epsilon Theory" }, // Narrative-driven macro investing
             { url: "https://feeds.feedburner.com/farnamstreet", name: "Farnam Street" }, // Mental models & decision-making
             { url: "https://nav.al/feed/", name: "Naval Ravikant" }, // Startup wisdom, philosophy, and wealth
-            { url: "https://sacks.substack.com/feed", name: "David Sacks (All-In Podcast)" }, // Tech, finance, and geopolitics
-            { url: "https://www.bloomberg.com/feed/podcast/money-stuff", name: "Matt Levine’s Money Stuff" } // Smart finance and crypto analysis
         ],
         ai: [
             { url: "https://openai.com/research/rss.xml", name: "OpenAI Research" }, // Cutting-edge AI
             { url: "http://karpathy.github.io/feed.xml", name: "Andrej Karpathy’s Blog" }, // Deep learning & AI insights
-            { url: "https://towardsdatascience.com/feed", name: "Towards Data Science" }, // AI tutorials & guides
-            { url: "https://www.deepmind.com/rss.xml", name: "DeepMind Blog" }, // The forefront of AI research
-            { url: "https://ai.googleblog.com/feeds/posts/default", name: "Google AI Blog" }, // Research & breakthroughs
             { url: "https://www.alignmentforum.org/feed.xml", name: "AI Alignment Forum" }, // AI safety & long-term AI risks
-            { url: "https://feeds.feedburner.com/nvidiablog", name: "NVIDIA AI Blog" } // Future of AI hardware
         ],
         art: [
             { url: "https://www.thisiscolossal.com/feed/", name: "Colossal Art" }, // The best in modern art
-            { url: "https://www.artsy.net/rss/news", name: "Artsy" }, // Contemporary art & culture
-            { url: "https://99percentinvisible.org/feed/", name: "99% Invisible" }, // Design and architecture
-            { url: "https://www.openculture.com/rss", name: "Open Culture" } // Free art, books, and media
         ],
         music: [
-            { url: "https://www.residentadvisor.net/xml/rss/news.xml", name: "Resident Advisor" }, // Electronic music & culture
             { url: "https://mixmag.net/rss.xml", name: "Mixmag" }, // Techno and underground music
-            { url: "https://cdm.link/feed/", name: "Create Digital Music" }, // AI & generative music
             { url: "https://www.synthtopia.com/feed/", name: "Synthtopia" }, // The best for synth nerds
             { url: "https://xlr8r.com/feed/", name: "XLR8R" } // Experimental electronic music
         ]

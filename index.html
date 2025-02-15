@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi! Here's my RSS Feed. Hope you like it! If you have some suggestions please let me know</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>ReadMyRSS</h1>
+        <div class="header-controls">
+            <button id="theme-toggle"><i class="fas fa-adjust"></i></button>
+            <button id="refresh-feeds"><i class="fas fa-sync-alt"></i></button>
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="tech">Tech & Programming</option>
+                <option value="philosophy">Philosophy</option>
+                <option value="art">Art & Creativity</option>
+                <option value="music">Music & Techno</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <section id="feed-content">
+            <div id="articles"></div>
+        </section>
+    </main>
+    <footer>
+        <p>ReadMyRSS &copy; 2025 - RJX7's Personal RSS Reader</p>
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
